@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Фрилансер Иванов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header, footer { background: #f5f5f5; padding: 20px; text-align: center; }
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+        .email-link { color: blue; text-decoration: underline; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Минсафин Владислав – Веб-разработчик</h1>
+        <p>Создание сайтов и веб-приложений под ключ</p>
+    </header>
+
+    <div class="container">
+        <h2>Обо мне</h2>
+        <p>Я занимаюсь созданием сайтов на HTML, CSS, JavaScript. Готов реализовать проекты любой сложности.</p>
+
+        <h2>Портфолио</h2>
+        <ul>
+            <li>Сайт для магазина мебели</li>
+            <li>Блог на React</li>
+            <li>Лендинг для фитнес-клуба</li>
+        </ul>
+
+        <h2>Контакты</h2>
+        <p>Свяжитесь со мной: 
+            <a href="mailto:minsafinvlad@gmail.com" class="email-link">ivanov@example.com</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2025 Минсафин Владислав</p>
+        <p>Продолжая использовать сайт, вы соглашаетесь с тем, что мы собираем данные о вашем посещении для целей аналитики. <a href="privacy.html">Подробнее</a>.</p>
+    </footer>
+
+    <!-- Яндекс Метрика -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(YOUR_COUNTER_ID, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/YOUR_COUNTER_ID" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <!-- JavaScript событие -->
+    <script>
+        document.querySelector('.email-link').addEventListener('click', function() {
+            ym(YOUR_COUNTER_ID, 'reachGoal', 'EMAIL_CLICKED');
+        });
+    </script>
+</body>
+</html>
